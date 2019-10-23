@@ -3,6 +3,9 @@ const express = require('express'),
 
 // app.use(helmet());
 
+const PORT = process.env.PORT || 5000
+
+
 app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
 
@@ -12,8 +15,6 @@ app.get("/", (req, res) => {
     res.render("dashboard.ejs");
 });
 
-app.listen(process.env.PORT, process.env.IP, () => {
-    console.log("connected...");
-});
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 // app.listen(3000);
