@@ -1,0 +1,29 @@
+{
+  "name": "web-articles-server",
+  "version": "1.0.0",
+  "description": "web-server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scarydonut/web-articles-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scarydonut/web-articles-server/issues"
+  },
+  "homepage": "https://github.com/scarydonut/web-articles-server#readme",
+  "devDependencies": {
+    "ejs": "^2.7.1",
+    "helmet": "^3.21.2",
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "save-dev": "0.0.1-security"
+  }
+}
