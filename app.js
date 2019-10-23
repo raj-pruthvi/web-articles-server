@@ -11,8 +11,8 @@ app.set('views', __dirname + '/views');
 
 app.set('view engine', 'ejs');
 
-app.get("/", (req, res) => {
-    res.render("dashboard.ejs");
+app.get("/", function(req, res) {
+    res.render("dashboard");
 });
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
